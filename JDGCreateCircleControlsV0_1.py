@@ -11,7 +11,7 @@ def autoControls (node):
 	cmds.select(node, add=True)
 	cmds.parent(r=True, s=True)
 	cmds.delete(node +'ctrl')
-	print 'control aplicado a ' + node
+	print 'control applied to ' + node
 	
 for item in cmds.ls(selection=True):
 	autoControls(item)
